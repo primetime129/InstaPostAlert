@@ -98,4 +98,10 @@ You can clone the InstaPostAlert repository using Git or download it directly.<b
 
 ---
 
+### 8. Discord Bot Creation
+
+for a detailed Tutorial on the Discord bot creation read XXX.md
+
+---
+
 With InstaPostAlert, your Discord server will stay connected with Instagram, bringing fresh content directly to your community in real-time. Enjoy keeping your audience engaged and informed!
