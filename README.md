@@ -104,4 +104,10 @@ For a detailed tutorial on the Discord bot creation read the DiscordBotCreation.
 
 ---
 
+### 8. Demo
+
+![Demo](https://github.com/user-attachments/assets/f70446f1-b84f-4bbf-8b3d-0412a99b1958)
+
+---
+
 With InstaPostAlert, your Discord server will stay connected with Instagram, bringing fresh content directly to your community in real-time. Enjoy keeping your audience engaged and informed!
