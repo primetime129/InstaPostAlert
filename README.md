@@ -96,3 +96,6 @@ Login Issues: Make sure your Instagram credentials are correct and that you’ve
 Discord Errors: Check that the bot has appropriate permissions in the designated channel.<br>
 Interval Adjustments: The bot’s fetch intervals are randomized for safety. You can adjust the time window in the random_range function to suit your needs.
 
+---
+
+With InstaPostAlert, your Discord server will stay connected with Instagram, bringing fresh content directly to your community in real-time. Enjoy keeping your audience engaged and informed!
