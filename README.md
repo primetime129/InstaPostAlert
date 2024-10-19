@@ -60,11 +60,11 @@ DISCORD_GUILD_ID=your-discord-server-id
 INSTAGRAM_USERNAME=your-instagram-username
 INSTAGRAM_PASSWORD=your-instagram-password
 ```
-DISCORD_BOT_TOKEN: Your Discord bot token from the developer portal.<br>
-DISCORD_CHANNEL_ID: The ID of the Discord channel where you want the bot to send Instagram updates.<br>
-DISCORD_GUILD_ID: The ID of your Discord server (guild).<br>
-INSTAGRAM_USERNAME: Instagram username for the bot to log in and fetch posts.<br>
-INSTAGRAM_PASSWORD: Password for the Instagram account.
+- DISCORD_BOT_TOKEN: Your Discord bot token from the developer portal.<br>
+- DISCORD_CHANNEL_ID: The ID of the Discord channel where you want the bot to send Instagram updates.<br>
+- DISCORD_GUILD_ID: The ID of your Discord server (guild).<br>
+- INSTAGRAM_USERNAME: Instagram username for the bot to log in and fetch posts.<br>
+- INSTAGRAM_PASSWORD: Password for the Instagram account.
 
 ---
 
@@ -92,9 +92,9 @@ usernames = ["account1", "account2", "account3"]  # Add Instagram usernames here
 
 You can clone the InstaPostAlert repository using Git or download it directly.<br>
 
-Login Issues: Make sure your Instagram credentials are correct and that you’ve logged in with them on a browser recently to avoid verification prompts.<br>
-Discord Errors: Check that the bot has appropriate permissions in the designated channel.<br>
-Interval Adjustments: The bot’s fetch intervals are randomized for safety. You can adjust the time window in the random_range function to suit your needs.
+- Login Issues: Make sure your Instagram credentials are correct and that you’ve logged in with them on a browser recently to avoid verification prompts.<br>
+- Discord Errors: Check that the bot has appropriate permissions in the designated channel.<br>
+- Interval Adjustments: The bot’s fetch intervals are randomized for safety. You can adjust the time window in the random_range function to suit your needs.
 
 ---
 
