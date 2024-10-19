@@ -68,4 +68,36 @@ INSTAGRAM_PASSWORD: Password for the Instagram account.
 
 ---
 
+---
 
+### 5. Run the Bot
+
+Start the bot by running the Python script:
+
+```bash
+python instapostalert.py
+```
+Once the bot is running, it will log into Instagram and Discord, fetching new posts from the Instagram accounts you specify in the code.
+---
+
+
+### 6. Customization
+
+You can modify the list of Instagram accounts the bot monitors in the on_ready event
+
+```python
+usernames = ["account1", "account2", "account3"]  # Add Instagram usernames here
+```
+
+---
+---
+
+### 7. Troubleshooting
+
+You can clone the InstaPostAlert repository using Git or download it directly.<br>
+
+Login Issues: Make sure your Instagram credentials are correct and that you’ve logged in with them on a browser recently to avoid verification prompts.<br>
+Discord Errors: Check that the bot has appropriate permissions in the designated channel.<br>
+Interval Adjustments: The bot’s fetch intervals are randomized for safety. You can adjust the time window in the random_range function to suit your needs.
+
+---
