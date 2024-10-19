@@ -33,4 +33,39 @@ You can clone the InstaPostAlert repository using Git or download it directly.
 
 ```bash
 git clone https://github.com/your-username/InstaPostAlert.git
-cd InstaPostAlert
+cd InstaPostAlertz
+```
+
+---
+
+### 3. Install Required Libraries
+
+Navigate to the bot directory and install the required Python libraries by running:
+
+```bash
+pip install -r requirements.txt
+```
+This will install discord.py, instaloader, and python-dotenv—all necessary for running the bot.
+
+---
+
+### 4. Create a .env File
+
+In the root directory, create a .env file to securely store your bot credentials and settings:
+
+```makefile
+DISCORD_BOT_TOKEN=your-discord-bot-token
+DISCORD_CHANNEL_ID=your-discord-channel-id
+DISCORD_GUILD_ID=your-discord-server-id
+INSTAGRAM_USERNAME=your-instagram-username
+INSTAGRAM_PASSWORD=your-instagram-password
+```
+DISCORD_BOT_TOKEN: Your Discord bot token from the developer portal.
+DISCORD_CHANNEL_ID: The ID of the Discord channel where you want the bot to send Instagram updates.
+DISCORD_GUILD_ID: The ID of your Discord server (guild).
+INSTAGRAM_USERNAME: Instagram username for the bot to log in and fetch posts.
+INSTAGRAM_PASSWORD: Password for the Instagram account.
+
+---
+
+
