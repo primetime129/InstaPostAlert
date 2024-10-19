@@ -100,7 +100,7 @@ You can clone the InstaPostAlert repository using Git or download it directly.<b
 
 ### 8. Discord Bot Creation
 
-for a detailed Tutorial on the Discord bot creation read XXX.md
+For a detailed tutorial on the Discord bot creation read the DiscordBotCreation.md
 
 ---
 
