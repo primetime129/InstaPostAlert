@@ -76,6 +76,7 @@ Start the bot by running the Python script:
 python instapostalert.py
 ```
 Once the bot is running, it will log into Instagram and Discord, fetching new posts from the Instagram accounts you specify in the code.
+
 ---
 
 ### 6. Customization
