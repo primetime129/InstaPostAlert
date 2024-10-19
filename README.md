@@ -60,10 +60,10 @@ DISCORD_GUILD_ID=your-discord-server-id
 INSTAGRAM_USERNAME=your-instagram-username
 INSTAGRAM_PASSWORD=your-instagram-password
 ```
-DISCORD_BOT_TOKEN: Your Discord bot token from the developer portal.
-DISCORD_CHANNEL_ID: The ID of the Discord channel where you want the bot to send Instagram updates.
-DISCORD_GUILD_ID: The ID of your Discord server (guild).
-INSTAGRAM_USERNAME: Instagram username for the bot to log in and fetch posts.
+DISCORD_BOT_TOKEN: Your Discord bot token from the developer portal.<br>
+DISCORD_CHANNEL_ID: The ID of the Discord channel where you want the bot to send Instagram updates.<br>
+DISCORD_GUILD_ID: The ID of your Discord server (guild).<br>
+INSTAGRAM_USERNAME: Instagram username for the bot to log in and fetch posts.<br>
 INSTAGRAM_PASSWORD: Password for the Instagram account.
 
 ---
