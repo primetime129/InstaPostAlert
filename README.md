@@ -104,7 +104,7 @@ For a detailed tutorial on the Discord bot creation read the DiscordBotCreation.
 
 ---
 
-### 8. Demo
+### 9. Demo
 
 ![Demo](https://github.com/user-attachments/assets/f70446f1-b84f-4bbf-8b3d-0412a99b1958)
 
