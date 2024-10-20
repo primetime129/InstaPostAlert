@@ -33,7 +33,7 @@ You can clone the InstaPostAlert repository using Git or download it directly.
 
 ```bash
 git clone https://github.com/primetime129/InstaPostAlert.git
-cd InstaPostAlertz
+cd InstaPostAlert
 ```
 
 ---
