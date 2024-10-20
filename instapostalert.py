@@ -30,19 +30,28 @@ def random_range(a, b, c, d, e):
     choice = random.choice([(a, b), (c, d), (e, e)])
     return random.randint(choice[0], choice[1])
 
-async def fetch_latest_post(loader, username):
-    """Fetch the latest post for a given Instagram username."""
+async def fetch_latest_unpinned_post(loader, username):
+    """Fetch the latest unpinned post for a given Instagram username."""
     try:
         profile = instaloader.Profile.from_username(loader.context, username)
         posts = profile.get_posts()
-        latest_post = next(posts)
+        
+        # Iterate through the posts to find the latest unpinned post
+        for post in posts:
+            post_shortcode = post.shortcode
 
-        caption = latest_post.caption if latest_post.caption else "No caption"
-        image_url = latest_post.url
-        profile_pic_url = profile.profile_pic_url
-        post_shortcode = latest_post.shortcode
+            # If this post was sent already, skip it (pinned post issue workaround)
+            if post_shortcode == last_post_shortcodes.get(username):
+                continue  # Skip pinned or already sent posts
 
-        return caption, image_url, profile_pic_url, post_shortcode
+            # Extract post details
+            caption = post.caption if post.caption else "No caption"
+            image_url = post.url
+            profile_pic_url = profile.profile_pic_url
+
+            return caption, image_url, profile_pic_url, post_shortcode
+
+        return None, None, None, None  # No new post found
     except Exception as e:
         print(f"Error fetching Instagram data for {username}: {str(e)}")
         return None, None, None, None
@@ -67,10 +76,11 @@ async def on_ready():
     while True:
         for username in usernames:
             try:
-                caption, image_url, profile_pic_url, post_shortcode = await fetch_latest_post(loader, username)
+                # Fetch the latest unpinned post
+                caption, image_url, profile_pic_url, post_shortcode = await fetch_latest_unpinned_post(loader, username)
 
-                # Skip if there's no new post
-                if post_shortcode == last_post_shortcodes.get(username):
+                # Skip if there's no new post to send
+                if not post_shortcode or post_shortcode == last_post_shortcodes.get(username):
                     print(f"No new post to send for {username}.")
                     continue
 
