@@ -32,7 +32,7 @@ Before you begin, make sure you have the following installed:
 You can clone the InstaPostAlert repository using Git or download it directly.
 
 ```bash
-git clone https://github.com/your-username/InstaPostAlert.git
+git clone https://github.com/primetime129/InstaPostAlert.git
 cd InstaPostAlertz
 ```
 
